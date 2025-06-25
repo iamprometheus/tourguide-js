@@ -25,6 +25,7 @@ export declare class TourGuideClient {
     addSteps(steps: TourGuideStep[]): Promise<void>;
     nextStep(): Promise<unknown>;
     prevStep(): Promise<unknown>;
+    clearSteps(tourGroup?: string): void;
     exit(): Promise<unknown>;
     refresh(): Promise<unknown>;
     refreshDialog(): Promise<unknown>;

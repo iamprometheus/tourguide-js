@@ -28,6 +28,7 @@ import handleRefreshTour, {handleRefreshDialog} from "./handlers/handleRefresh";
 import handleFinishTour, {delFinishedTour, getIsFinished} from "./handlers/handleFinishTour";
 // UTIL
 import defaultOptions from "./util/util_default_options";
+import handleClearSteps from "./handlers/handleClearSteps";
 
 // Tour
 class TourGuideClient{
@@ -88,6 +89,7 @@ class TourGuideClient{
     start = handleTourStart // Start the tour - compute steps -> goToStep (checks -> update dialog html, dialog & backdrop) -> initListeners()
     visitStep = handleVisitStep // visit step by stepIndex or `next` | `prev`
     addSteps = handleAddStep // Push new steps to the tour
+    clearSteps = handleClearSteps // Clear steps from tour
     nextStep = handleVisitNextStep // navigate to next step - also handles calling finishTour() on final step
     prevStep = handleVisitPrevStep // navigate to previous step
     exit = handleClose // exit the tour
