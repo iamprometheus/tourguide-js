@@ -21,6 +21,7 @@ import {TourGuideStep} from "./types/TourGuideStep";
 // HANDLERS
 import handleVisitStep, {handleVisitNextStep, handleVisitPrevStep} from "./handlers/handleVisitStep";
 import handleAddStep from "./handlers/handleAddStep";
+import handleClearSteps from "./handlers/handleClearSteps";
 import handleTourStart from "./handlers/handleTourStart";
 import handleSetOptions from "./handlers/handleSetOptions";
 import handleClose from "./handlers/handleClose";
@@ -28,7 +29,6 @@ import handleRefreshTour, {handleRefreshDialog} from "./handlers/handleRefresh";
 import handleFinishTour, {delFinishedTour, getIsFinished} from "./handlers/handleFinishTour";
 // UTIL
 import defaultOptions from "./util/util_default_options";
-import handleClearSteps from "./handlers/handleClearSteps";
 
 // Tour
 class TourGuideClient{
